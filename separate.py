@@ -1,4 +1,6 @@
 from pathlib import Path
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 from audio_separator.separator import Separator
 
 INPUT = "musica.mp3"
@@ -21,7 +23,7 @@ print()
 
 # Choose model manually
 
-filename = "UVR-MDX-NET-Inst_HQ_3.onnx"
+filename = "3_HP-Vocal-UVR.pth"
 sep.download_model_files(filename)
 sep.load_model(filename)
 sep.separate(INPUT)
