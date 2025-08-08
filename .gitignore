@@ -8,3 +8,26 @@ wheels/
 
 # Virtual environments
 .venv
+env/
+venv/
+
+
+
+# Model cache (do not commit large binary files)
+models_cache/
+*.pth
+*.onnx
+*.ckpt
+*.yaml
+download_checks.json
+vr_model_data.json
+mdx_model_data.json
+
+stems/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (ignore all, except shared configs)
+.vscode/
