@@ -1,4 +1,5 @@
 # separate.py
+#best based cpu model 10_SP-UVR-2B-32000-1.pth
 import sys
 from pathlib import Path
 import os
